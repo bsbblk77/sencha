@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+    <title>Femtocom</title>
+	<link rel="stylesheet" href="sencha-touch.css" type="text/css">
+	<script type="text/javascript" src="sencha-touch.js"></script>  
+	<script type="text/javascript" src="indexr.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+	
+	<style type="text/css" media="screen">
+          .x-floating .x-panel-body, .x-floating .x-carousel-body{
+              background-color: #EEE;
+              -webkit-border-redius: .3em;
+              border-radius: .3em;
+          } 
+          .demos-loading {
+              background: rgba(0,0,0,.3) url(../resources/shared/loading.gif) center center no-repeat;
+              display: block;
+              width: 10px;
+              height: 10em;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -5em;
+              margin-top: -5em;
+              -webkit-border-radius: .5em;
+              color: #fff;
+              text-shadow: #000 0 1px 1px;
+              text-align: center;
+              padding-top: 8em;
+              font-weight: bold;
+           }
+           .card2{ background: #C2CFDF }
+           .cardt{ background: #CCC } 
+           .tweet {
+                background:#CCC;
+                margin-left: 7px;
+                margin-top: 5px;
+                overflow: hidden;
+                padding: 7px;
+
+                
+            }
+            .x-tweettanchor{
+                 background: url(arrowss.png); 
+                 width:14px; 
+                 height:14px;
+                 top: 15px;
+                 left:70px;
+                 position: relative;
+             }
+
+ 
+            .avatar {
+                float: left;
+                height: 55px;
+                width: 55px;
+                padding: 3px;
+                margin-top: 15px;
+                background-color: white;
+                overflow: hidden;
+            }
+            .tweet-content {
+                
+                background:#EEE ;
+                font-size: 16px;
+                color:#444; 
+                line-height: 17px;
+                margin-top: 17px;
+                margin-bottom: 17px;
+                margin-left: 5px;
+                margin-right: 15px;
+               
+            }
+            .tweet-content h2{
+               font-weight: bold;
+               color: #111;
+            }
+            .tweet-bubble{
+                position: relative;
+                background:#EEE; 
+                min-height: 70px;
+                margin-left: 80px;
+                overflow: hidden;
+                -webkit-border-radius: 2px;
+                -webkit-box-flex: 1;
+                box-flex:1;
+                display: block;
+               
+            
+            }
+            .List
+            {   
+                border-bottom: 2px solid #EEE;
+                overflow: hidden;
+                padding:15px 5px;
+                background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, white), color-stop(2%, #DEDEDE), color-stop(100%, #BABABA));
+            }
+            .card1
+            {
+	background-position:8px;
+	background-repeat:no-repeat;
+	border:2px solid #CCC;
+	padding:9px 0 9px 38px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	font-size:15px;
+	font-weight:bold;
+	color: #333;
+            }
+            .body
+            {
+               margin-bottom:2px;
+               margin-left:7px;
+               font-size: 20px;
+               line-height:30px;
+               color:#333;
+ 
+            }
+
+
+	</style>
+       
+</head>
+<body>
+  <div id="guests" class="x-hidden-display">
+        <tpl for=".">
+            <div class="detail">
+                <div class="clear"">
+                    <label class="label2 topleft">Sender</label>
+                    <span class="span2 topright">{name}</span>
+                </div>
+                <div class="clear"">
+                    <label class="label2 topleft">Email</label>
+                    <span class="span2 topright">{email}</span>
+                </div>
+                <div class="clear"">
+                    <label class="label2 topleft">Subject</label>
+                    <span class="span2 topright">{subject}</span>
+                </div>
+                                        <div class="clear"">
+                    <label class="label2 topleft">Date</label>
+                    <span class="span2 topright">{date}</span>
+                </div>
+                <div class="clear"">
+                    <label class="label2 bottomleft">Message</label>
+                    <span class="span3 bottomright">{message}</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </tpl>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+ 
+</body>
+</html>
